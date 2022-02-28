@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #C2CFA1;
+}
+
+img {
+    object-fit: cover;
+}
+
+/*==== Logo ====*/
+
+.container {
+   width: 80%;
+   margin: auto;
+   background-color: #C2CFA1;
+   position: relative;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    background-color: #C2CFA1;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    background-color: #C2CFA1;
+
+}
+
+/*==== Slider ====*/
+
+.slider {
+    width: 100%;
+}
+.slider img {
+    width: 100%;
+    height: 500px;
+    border: 10px solid #404622;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*===== Pause/Play BTNS ====*/
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls a{
+    text-decoration: none;
+    background-color: #0F100B;
+    color: white;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 8px;
+    margin: 5px;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.controls a:hover {
+    background-color: #0F100B;
+    opacity: 1;
+}
+
+/*==== Thimbnails ====*/
+
+.thumbnails img {
+    width: 200px;
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+.thumbnails a:hover img {
+    transform: scale(1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.thumbnails {
+    display: grid;
+    
+    grid-template-areas: 
+    "img2 img3 img4 img5"
+    "img6 img7 img8 img9";
+}
+
+.thumbnails a img{
+    width: 100%;
+    height: 150px;
+    border: 3px solid #333;
+}
+
+.slide {
+    position: absolute;
+}
+
+/*==== Prev_Next BTNS ====*/
+
+.controls_prev_next button i{
+    cursor: pointer;
+}
+
+.controls a {
+    cursor: pointer;
+}
+.uil {
+    background-color: #0F100B;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 37%;
+    opacity: 0.7;
+}
+
+.next {
+    right: 0%;
+    margin-right: 10px;
+}
+.prev {
+    margin-left: 8px;
+}
+
+.prev:hover, .next:hover {
+    opacity: 1;
+}

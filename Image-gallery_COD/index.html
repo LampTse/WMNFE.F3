@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery nikos</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+<body>
+
+    <!-- Image Gallery Container-->
+    
+<div class="container">
+    <div class="header-container">
+        <img class="logo" src="/logo/logo.png" alt="alt">
+        
+    </div>
+    <div class="slider">
+        <img  name="slide">
+        <div class="controls_prev_next">
+            <a onclick="prevImage()"><i class="uil uil-arrow-left prev"></i></a>
+            <a onclick="nextImage()"><i class="uil uil-arrow-right next"></i></a>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <a onclick="stopSlideShow()" id="stopButton">STOP</a>
+        <a  onclick="startSlideShow()" id="playButton">PLAY</a>
+    </div>
+    <div class="thumbnails">
+        <a ><img src="/images/1.jpg" onclick="thumbsClick(0)"  class="thumbsImg"></a>
+        <a ><img src="/images/2.jpg" onclick="thumbsClick(1)"  class="thumbsImg"></a>
+        <a ><img src="/images/3.jpg" onclick="thumbsClick(2)"  class="thumbsImg"></a>
+        <a ><img src="/images/4.jpg" onclick="thumbsClick(3)"  class="thumbsImg"></a>
+        <a ><img src="/images/5.jpg" onclick="thumbsClick(4)"  class="thumbsImg"></a>
+        <a ><img src="/images/6.jpg" onclick="thumbsClick(5)"  class="thumbsImg"></a>
+        <a ><img src="/images/7.jpg" onclick="thumbsClick(6)"  class="thumbsImg"></a>
+        <a ><img src="/images/8.jpg" onclick="thumbsClick(7)"  class="thumbsImg"></a>
+        
+    </div>
+</div>
+
+</body>
+</html>

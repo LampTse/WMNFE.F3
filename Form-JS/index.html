@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="contact-us">
+      <h1>Contact Form</h1>
+      <p>We'd love to hear from you! Please send us a message!</p>
+    </div>
+
+    <form>
+      <!--====== Full Name ======-->
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          name="name"
+          class=""
+          type="text"
+          placeholder="Your first and last name"
+        />
+        <div class="error-hint hidden">Your name is required</div>
+      </div>
+
+      <!--====== Email ======-->
+
+      <div class="form-group">
+        <label for="name">Email</label>
+        <input
+          name="email"
+          class=""
+          type="text"
+          placeholder="Your email address"
+        />
+        <div class="error-hint hidden">Your email is invalid</div>
+      </div>
+
+      <!--====== Email verification ======-->
+      <div class="form-group">
+        <label for="name">Email verification</label>
+        <input
+          name="email-confirm"
+          class=""
+          type="text"
+          placeholder="Confirm your email address"
+        />
+        <div class="error-hint hidden">Your email do not match</div>
+      </div>
+
+      <!--====== Phone Number ======-->
+
+      <div class="form-group">
+        <label for="name">Phone</label>
+        <input
+          name="phone"
+          class=""
+          type="text"
+          placeholder="Your phone number"
+        />
+        <div class="error-hint hidden">Your phone is invalid</div>
+      </div>
+
+      <!--====== Message Form ======-->
+
+      <div class="form-group">
+        <label for="name">Message</label>
+        <textarea
+          name="message"
+          type="text"
+          placeholder="Your message"
+        ></textarea>
+        <div class="error-hint hidden">Your message is required.</div>
+      </div>
+
+      <hr />
+
+      <button type="submit" name="btn">Submit</button>
+    </form>
+
+    !--====== Feedback message ======-->
+
+    <div class="thank-you hidden">Thank you for your feedback!</div>
+  </body>
+</html>
